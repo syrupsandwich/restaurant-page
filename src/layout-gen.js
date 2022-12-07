@@ -69,7 +69,9 @@ tab1.appendChild(tab1ImageContainer);
       <div class="menu">
         <h2>GALLEY GRUB</h2>
         <div class="container">
-          <img src="./krabby-patty.png" alt="burger" class="item-display">
+          <div class="item-display-container">
+            <img src="" alt="menu item" class="item-display">
+          </div>
           <span>
             <ul class="leaders">
               <li><span>Krabby Patty</span><span>2.00</span></li>
@@ -109,28 +111,45 @@ let menuSubContainer = document.createElement('div');
 menuSubContainer.className = 'container';
 
 import krabbyPatty from './krabby-patty.png';
+import krustyCombo from './krusty-combo.png';
+import krustyDeluxe from './krusty-deluxe.png';
+import seaweedSalad from './seaweed-salad.png';
+import coralBits from './coral-bits.png';
+
+let displayContainer = document.createElement('div');
+displayContainer.className = 'item-display-container';
 
 let itemDisplay = document.createElement('img');
 itemDisplay.className = 'item-display';
 itemDisplay.src = krabbyPatty;
-itemDisplay.setAttribute('alt', 'krabby-patty');
-menuSubContainer.appendChild(itemDisplay);
+itemDisplay.setAttribute('alt', 'menu item');
+displayContainer.appendChild(itemDisplay);
+menuSubContainer.appendChild(displayContainer);
 
 let menuList = document.createElement('ul');
 menuList.className = 'leaders';
-let listItem1 = createListElement('Krabby Patty', '2.00');
-let listItem2 = createListElement('Krusty Combo', '3.00');
-let listItem3 = createListElement('Krusty Deluxe', '3.00');
+let listItem1 = createListElement('Krabby Patty', '2.70');
+let listItem2 = createListElement('Krusty Combo', '3.50');
+let listItem3 = createListElement('Krusty Deluxe', '4.25');
 let sidesLabel = document.createElement('p');
 sidesLabel.textContent = 'Sides';
-let listItem4 = createListElement('Seaweed Salad', '1.50');
-let listItem5 = createListElement('Coral Bits', '1.59');
+let listItem4 = createListElement('Seaweed Salad', '1.00');
+let listItem5 = createListElement('Coral Bits', '1.50');
 menuList.appendChild(listItem1);
 menuList.appendChild(listItem2);
 menuList.appendChild(listItem3);
 menuList.appendChild(sidesLabel);
 menuList.appendChild(listItem4);
 menuList.appendChild(listItem5);
+
+menuList.addEventListener('click', function(e){
+  if(e.target.nodeName !== 'LI'){ return };
+  if(e.target.children[0].textContent === 'Krabby Patty'){ itemDisplay.src = krabbyPatty };
+  if(e.target.children[0].textContent === 'Krusty Combo'){ itemDisplay.src = krustyCombo };
+  if(e.target.children[0].textContent === 'Krusty Deluxe'){ itemDisplay.src = krustyDeluxe };
+  if(e.target.children[0].textContent === 'Seaweed Salad'){ itemDisplay.src = seaweedSalad };
+  if(e.target.children[0].textContent === 'Coral Bits'){ itemDisplay.src = coralBits };
+});
 
 let listContainer = document.createElement('span');
 listContainer.appendChild(menuList);

@@ -87,7 +87,9 @@ header>span>button{
   padding: 30px;
   width: 500px;
   box-shadow: 4px 8px 6px 4px rgb(117, 117, 94);
-  margin: 18px;
+  margin: 40px 0 0 0;
+  border: 3px solid maroon;
+  border-radius: 4px;
 }
 
 .menu>h2{
@@ -100,14 +102,26 @@ header>span>button{
 
 .menu>div.container{
   display: flex;
-  flex-flow: column;
+  gap: 20px;
+}
+
+.item-display-container{
+  padding: 20px;
+  background-image: url(./glow.svg) ,radial-gradient(rgb(255, 255, 79), coral);
+  background-position: center;
+  background-size: 150%;
+  height: 170px;
+  width: 180px;
+  align-self: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .item-display{
-  border: 1px solid coral;
-  padding: 50px;
-  margin: 20px;
-  background-image: radial-gradient(yellow, coral);
+  width: inherit;
+  height: auto;
+  object-fit: scale-down;
 }
 
 .menu>div.container>span:last-child{
@@ -130,6 +144,10 @@ ul.leaders li{
   padding: 8px 0;
 }
 
+ul.leaders li>*{
+  pointer-events: none;
+}
+
 ul.leaders li:before {
   float: left;
   width: 0;
@@ -138,7 +156,8 @@ ul.leaders li:before {
 ". . . . . . . . . . . . . . . . . . . . "
 ". . . . . . . . . . . . . . . . . . . . "
 ". . . . . . . . . . . . . . . . . . . . "
-". . . . . . . . . . . . . . . . . . . . "
+". . . . . . . . . . . . . . . . . . . . ";
+pointer-events: none;
 }
 
 ul.leaders span:first-child {

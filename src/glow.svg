@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="42.381844mm"
+   height="42.708817mm"
+   viewBox="0 0 42.381844 42.708817"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01, custom)"
+   sodipodi:docname="glow.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4.2935904"
+     inkscape:cx="60.206022"
+     inkscape:cy="77.324563"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1203">
+      <stop
+         style="stop-color:#fdff3c;stop-opacity:0.71905959;"
+         offset="0.16213824"
+         id="stop1199" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0;"
+         offset="0.7890113"
+         id="stop1201" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1203"
+       id="radialGradient1205"
+       cx="103.60139"
+       cy="113.28764"
+       fx="103.60139"
+       fy="113.28764"
+       r="21.348902"
+       gradientTransform="matrix(0.85762566,0,0,0.86328342,14.742485,15.490759)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-82.414395,-91.932093)">
+    <ellipse
+       style="font-variation-settings:normal;display:none;opacity:1;fill:#1a1a1a;fill-opacity:0.111109;fill-rule:evenodd;stroke:#000000;stroke-width:0.227271;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.681812, 0.227271;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path234"
+       cx="103.71455"
+       cy="113.15199"
+       rx="3.854671"
+       ry="3.8194356"
+       sodipodi:insensitive="true" />
+    <ellipse
+       style="font-variation-settings:normal;display:none;opacity:1;fill:#1a1a1a;fill-opacity:0.111109;fill-rule:evenodd;stroke:#000000;stroke-width:0.217837;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.61404, 0.217837;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       id="path236"
+       cx="103.54739"
+       cy="113.30499"
+       rx="18.341198"
+       ry="18.373438"
+       sodipodi:insensitive="true" />
+    <path
+       style="fill:url(#radialGradient1205);fill-opacity:1;stroke:none;stroke-width:0.227271;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 104.30179,94.996106 0.98251,12.649524 6.78443,-10.599914 1.21293,0.755195 -5.40516,11.110809 10.5086,-6.48081 0.64523,1.02018 -9.42916,7.51188 11.94394,-0.71026 0.22583,1.30761 -12.16294,1.77568 11.75998,4.04124 -0.31717,1.30506 -12.17567,-2.96858 9.46396,8.51079 -0.7147,0.79182 -10.27752,-7.50772 5.54436,11.53245 -0.99003,0.5692 -6.76608,-10.91885 -0.34036,12.86549 -1.43819,0.0463 -0.93617,-12.92541 -5.706827,11.64918 -1.184123,-0.53493 4.359758,-11.94376 -10.334438,7.34036 -0.82134,-1.11282 9.712008,-8.58021 -12.698065,2.22776 -0.324198,-1.26756 12.345992,-3.18119 -12.205234,-3.62405 0.217192,-1.21261 12.785271,2.10174 -8.867872,-9.26055 0.682929,-0.71687 9.759657,8.05576 -3.908204,-12.227971 1.075319,-0.336638 5.099155,11.495989 0.41746,-12.574394 z"
+       id="path1078"
+       sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccc" />
+  </g>
+</svg>
