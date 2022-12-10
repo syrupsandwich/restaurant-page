@@ -13,13 +13,30 @@ html,
 body{
   height: 100%;
 }
+html{
+  background: linear-gradient(0deg, rgba(7,136,255,1) 16%, rgba(0,212,255,1) 65%);
+  background-attachment: fixed;
+}
 
 body>#content{
   font-family: 'Some-Time-Later';
   display: grid;
-  --center-content-height: 860px;
-  grid-template: auto auto 1fr / 1fr auto 1fr;
+  grid-template: auto minmax(540px, 1fr) auto / 1fr auto 1fr;
   font-size: 20px;
+  height: 100%;
+}
+
+.bg-container{
+  grid-area: 1 / 1 / 4 / 4 ;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.background{
+  transform: scale(240%);
+  margin: -220px 0 220px;
 }
 
 button{

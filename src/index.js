@@ -1,9 +1,10 @@
 console.log('One week later...');
 
-import { header, center, footer, tab1, tab2, tab3 } from './layout-gen.js';
+import { header, center, footer, tab1, tab2, tab3, backgroundContainer} from './layout-gen.js';
 import './style.css';
 
 let contentContainer = document.querySelector('#content');
+contentContainer.appendChild(backgroundContainer);
 contentContainer.appendChild(header);
 contentContainer.appendChild(center);
 center.appendChild(tab1);

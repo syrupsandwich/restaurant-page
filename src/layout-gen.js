@@ -1,5 +1,15 @@
 //please excuse the reference html
 
+import theKrustyKrabPNG from './wip-krusty-krab-img.png';
+let background = document.createElement('img');
+background.className = 'background';
+background.src = theKrustyKrabPNG;
+let backgroundContainer = document.createElement('div');
+backgroundContainer.className = 'bg-container';
+backgroundContainer.appendChild(background);
+
+export {backgroundContainer};
+
 {/* <header>
 <span><button id="home" type="button">Home Page</button></span>
 <span><button id="menu" type="button">Menu</button></span>
@@ -55,13 +65,6 @@ tab1ImageContainer.className = 'location';
 let restaurantAddress = document.createElement('p')
 restaurantAddress.textContent = 'Our restaurant is located at 831 Bottom Feeder Lane.';
 tab1ImageContainer.appendChild(restaurantAddress);
-
-import theKrustyKrabPNG from './the-krusty-krab.png';
-
-let restaurantImage = document.createElement('img');
-restaurantImage.src = theKrustyKrabPNG;
-restaurantImage.setAttribute('alt', 'The Krusty Krab');
-tab1ImageContainer.appendChild(restaurantImage);
 
 tab1.appendChild(tab1ImageContainer);
 
