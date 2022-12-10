@@ -63,40 +63,52 @@ header>span>button{
 
 #content>.center{
   grid-area: 2 / 2 / 3 / 3 ;
-  background-color: rgb(147, 203, 218);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 #content>.center>div{
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 700px;
-  background-color: white;
-  border: 1px solid coral;
-  height: var(--center-content-height);
-}
-
-.location>p{
-  position: relative;
-  top: 312px;
-  left: 18px;
-  color: white;
+  margin: 50px 8px;
+  border-radius: 10px;
 }
 
 .tab1{
-  background-color: seashell;
+  justify-content: space-between;
 }
 
-.tab1>.location>img{
-  width: 480px;
-  margin-top: 20px;
+.location>p{
+  text-align: center;
+  color: seashell;
+  text-shadow: 0 0 3px black;
+}
+
+.brand-container{
+  text-align: center;
 }
 
 .restaurant-title{
-  margin-top: 50px;
-  font-size: 50px;
+  font-size: 54px;
   letter-spacing: 2px;
+  color: maroon;
+  padding: 0;
+  margin: 0;
+  --title-text-shadow-color: seashell ;
+  --title-text-shadow-blur: 2px;
+  text-shadow:
+  -2px -2px var(--title-text-shadow-blur) var(--title-text-shadow-color),
+   2px -2px var(--title-text-shadow-blur) var(--title-text-shadow-color),
+  -2px 2px var(--title-text-shadow-blur) var(--title-text-shadow-color),
+   2px 2px var(--title-text-shadow-blur) var(--title-text-shadow-color),
+  -3px 0 var(--title-text-shadow-blur) var(--title-text-shadow-color),
+   3px 0 var(--title-text-shadow-blur) var(--title-text-shadow-color),
+   0 -3px var(--title-text-shadow-blur) var(--title-text-shadow-color),
+   0 3px var(--title-text-shadow-blur) var(--title-text-shadow-color);
 }
 
 .menu{

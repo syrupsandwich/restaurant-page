@@ -50,14 +50,19 @@ center.className = 'center';
 let tab1 = document.createElement('div');
 tab1.className = 'tab1';
 
+let brandContainer = document.createElement('div');
+brandContainer.className = 'brand-container';
+
 let tab1Title = document.createElement('h1');
 tab1Title.className = 'restaurant-title';
 tab1Title.textContent = 'THE KRUSTY KRAB';
-tab1.appendChild(tab1Title);
+brandContainer.appendChild(tab1Title);
 
 let tab1Greeting = document.createElement('p');
 tab1Greeting.textContent = 'Welcome to the unofficial Krusty Krab website';
-tab1.appendChild(tab1Greeting);
+brandContainer.appendChild(tab1Greeting);
+
+tab1.appendChild(brandContainer);
 
 let tab1ImageContainer = document.createElement('div');
 tab1ImageContainer.className = 'location';
