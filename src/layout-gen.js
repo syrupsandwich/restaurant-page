@@ -162,9 +162,10 @@ tab2.appendChild(menu);
 
 {/* <div class="tab3">
       <h2>Customer Support</h2>
-      <div class="support">
-        <p>We'll connect you to one of our representatives in just a moment.</p>
-        <div class="chat-box"></div>
+      <p></p>
+      <div class="representative">
+        <p class="msg-from-rep"></p>
+        <img src="" alt="Mr. Krabs" class="restaurant-rep">
       </div>
     </div> */}
 
@@ -176,15 +177,29 @@ tab3Title.textContent = 'Customer Support';
 tab3.appendChild(tab3Title);
 
 let tab3SubContainer = document.createElement('div');
-tab3SubContainer.className = 'support';
+tab3SubContainer.className = 'representative';
+
+let tab3MSGContainer = document.createElement('div');
+tab3MSGContainer.className = 'msg-container';
 
 let tab3SupportMSG = document.createElement('p');
-tab3SupportMSG.textContent = "We'll connect you to one of our representatives in just a moment.";
-tab3SubContainer.appendChild(tab3SupportMSG);
+tab3SupportMSG.textContent = "Please call The Krusty Krab at 555-5555 for any questions you may have regarding our restaurant.";
+tab3MSGContainer.appendChild(tab3SupportMSG);
 
-let chatBox = document.createElement('div');
-chatBox.className = 'chat-box'; 
-tab3SubContainer.appendChild(chatBox);
+let tab3FeeMSG = document.createElement('p');
+tab3FeeMSG.className = 'disclaimer';
+let policyIntro = 'THIS IS THE KRUSTY KRAB POLICY:'
+let policy1 = '1. BY CALLING THE KRUSTY KRAB, YOU AGREE TO PAY A FEE OF 1 DOLLAR.';
+let policy2 = '2. THE KRUSTY KRAB DOES NOT OFFER REFUNDS TO ANYONE.';
+let policy3 = '3. ONCE THE ORDER HAS REACHED THE CUSTOMER, IT IS HIS / HER RESPONSIBILITY.';
+let policy4 = '4. NO FREE NAPKINS, CONDIMENTS, STRAWS, OR REFILLS.';
+let policy5 = '5. THERE IS A 5 DOLLAR COMPLAINT FEE.';
+let policy6 = '6. THE KRUSTY KRAB HAS THE RIGHT TO REFUSE SERVICE TO ANYONE.';
+let fillerText = '|||||||||||||||||';
+tab3FeeMSG.textContent = `${fillerText} ${policyIntro} ${policy1} ${policy2} ${policy3} ${policy4} ${policy5} ${policy6} ${fillerText}`;
+tab3MSGContainer.appendChild(tab3FeeMSG);
+
+tab3.appendChild(tab3MSGContainer);
 
 tab3.appendChild(tab3SubContainer);
 
