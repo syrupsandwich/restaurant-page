@@ -203,8 +203,7 @@ let policy3 = '3. ONCE THE ORDER HAS REACHED THE CUSTOMER, IT IS HIS / HER RESPO
 let policy4 = '4. NO FREE NAPKINS, CONDIMENTS, STRAWS, OR REFILLS.';
 let policy5 = '5. THERE IS A 5 DOLLAR COMPLAINT FEE.';
 let policy6 = '6. THE KRUSTY KRAB HAS THE RIGHT TO REFUSE SERVICE TO ANYONE.';
-let fillerText = '|||||||||||||||||';
-tab3FeeMSG.textContent = `${fillerText} ${policyIntro} ${policy1} ${policy2} ${policy3} ${policy4} ${policy5} ${policy6} ${fillerText}`;
+tab3FeeMSG.textContent = `${policyIntro} ${policy1} ${policy2} ${policy3} ${policy4} ${policy5} ${policy6}`;
 tab3MSGContainer.appendChild(tab3FeeMSG);
 
 tab3.appendChild(tab3MSGContainer);
